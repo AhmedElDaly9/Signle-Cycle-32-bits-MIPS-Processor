@@ -10,6 +10,6 @@ module MUX_2x1 #
     output  wire    [DATA_WIDTH-1:0]    OUT   
 );
 
-    assign  OUT =  (Sel)?   IN_0    :   IN_1    ; 
+    assign  OUT =  (Sel)?   IN_1    :   IN_0    ; 
     
 endmodule

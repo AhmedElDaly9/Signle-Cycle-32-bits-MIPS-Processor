@@ -32,6 +32,6 @@ localparam SLT  = 3'b110    ;
             endcase
         end
 
-    assign  Zero  = &ALUResult;
+    assign  Zero  = ~(|ALUResult);
 
 endmodule

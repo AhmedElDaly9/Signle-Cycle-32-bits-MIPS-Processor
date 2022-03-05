@@ -1,4 +1,4 @@
-module ControlUnit#
+module ControlUnit #
 (
     parameter   INSTR_WIDTH =   32
 )

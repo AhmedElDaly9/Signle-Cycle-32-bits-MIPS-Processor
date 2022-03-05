@@ -36,7 +36,7 @@ module RegisterFile #
                 begin
                     if (WEN3)
                         begin
-                            REG[i]  <=  WD3 ;
+                            REG[A3]  <=  WD3 ;
                         end
                 end
         end

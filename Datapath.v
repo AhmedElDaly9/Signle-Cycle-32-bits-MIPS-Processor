@@ -1,4 +1,5 @@
-module Datapath #(
+module Datapath #
+(
     parameter   INSTR_WIDTH     =   32  ,
     parameter   ADDRESS_WIDTH   =   32  ,
     parameter   DATA_WIDTH      =   32
@@ -16,6 +17,7 @@ module Datapath #(
     input   wire                        CLK         ,
     input   wire                        rst         ,
 
+    output  wire    [ADDRESS_WIDTH-1:0] PC          ,
     output  wire                        Zero        ,
     output  wire    [DATA_WIDTH-1:0]    ALUOut      ,
     output  wire    [DATA_WIDTH-1:0]    WriteData   
@@ -24,7 +26,6 @@ module Datapath #(
 /***************************INTERNAL SIGNALS***************************/
 
     wire    [ADDRESS_WIDTH-1:0]     PC_in               ;
-    wire    [ADDRESS_WIDTH-1:0]     PC                  ;
     wire    [ADDRESS_WIDTH-1:0]     PCPlus4             ;
     wire    [ADDRESS_WIDTH-1:0]     PCBranch            ;
     wire    [ADDRESS_WIDTH-1:0]     PlusOrBranchMUX_out ;
@@ -34,7 +35,6 @@ module Datapath #(
 
     wire    [DATA_WIDTH-1:0]        SrcA                ;
     wire    [DATA_WIDTH-1:0]        SrcB                ;
-    wire    [DATA_WIDTH-1:0]        ALUResult           ;
     wire    [DATA_WIDTH-1:0]        ReadData            ;
     wire    [DATA_WIDTH-1:0]        RegWD3Result        ;
     wire    [4:0]                   WriteReg            ;
@@ -86,9 +86,9 @@ module Datapath #(
 
     MUX_2x1 JmpMUX
     (
-        .IN_0   (PlusOrBranchMUX_out)                   ,
+        .IN_0   (PlusOrBranchMUX_out)               ,
         .IN_1   ({PCPlus4[31:28],JmpInstShiftOut})  ,
-        .Sel    (Jmp)                                   ,
+        .Sel    (Jmp)                               ,
         
         .OUT    (PC_in)                
     );
@@ -113,7 +113,7 @@ module Datapath #(
 
     MUX_2x1 WD3_MUX
     (
-        .IN_0   (ALUResult)     ,
+        .IN_0   (ALUOut)        ,
         .IN_1   (ReadData)      ,
         .Sel    (MemtoReg)      ,
 

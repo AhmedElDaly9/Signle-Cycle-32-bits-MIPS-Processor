@@ -1,5 +1,5 @@
 # vsim work.MIPS 
-# Start time: 20:27:47 on Mar 05,2022
+# Start time: 01:16:16 on Mar 06,2022
 # Loading work.MIPS
 # Loading work.ControlUnit
 # Loading work.Datapath
@@ -15,122 +15,12 @@
 add wave -position insertpoint  \
 sim:/MIPS/testValue \
 sim:/MIPS/rst \
-sim:/MIPS/Zero \
-sim:/MIPS/WriteData \
-sim:/MIPS/RegWrite \
-sim:/MIPS/RegDst \
-sim:/MIPS/ReadData \
-sim:/MIPS/PCSrc \
-sim:/MIPS/PC \
-sim:/MIPS/MemtoReg \
-sim:/MIPS/MemWrite \
-sim:/MIPS/Jmp \
-sim:/MIPS/Instr \
-sim:/MIPS/DATA_WIDTH \
-sim:/MIPS/CLK \
-sim:/MIPS/ALUSrc \
-sim:/MIPS/ALUOut \
-sim:/MIPS/ALUControl \
-sim:/MIPS/ADDRESS_WIDTH
-force -freeze sim:/MIPS/CLK 1 0, 0 {50 ps} -r 100
+sim:/MIPS/CLK
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Daly  Hostname: DESKTOP-HHUSP20  ProcessID: 21776
+#           Attempting to use alternate WLF file "./wlft9faex6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9faex6
 force -freeze sim:/MIPS/rst 0 0
+force -freeze sim:/MIPS/CLK 1 0, 0 {50 ps} -r 100
 run
-force -freeze sim:/MIPS/rst 1 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 20:30:56 on Mar 05,2022, Elapsed time: 0:03:09
-# Errors: 0, Warnings: 0

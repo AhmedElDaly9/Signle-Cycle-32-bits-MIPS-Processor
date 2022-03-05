@@ -61,7 +61,7 @@ module MIPS #
 
 /***************************DATA PATH***************************/
 /*
-    input   wire    [INSTR_WIDTH-1:0]   Instruction ,
+        input   wire    [INSTR_WIDTH-1:0]   Instruction ,
     input   wire    [DATA_WIDTH-1:0]    Data        ,
     input   wire    [2:0]               ALUControl  ,
     input   wire                        PCSrc       ,
@@ -73,9 +73,10 @@ module MIPS #
     input   wire                        CLK         ,
     input   wire                        rst         ,
 
+    output  wire    [ADDRESS_WIDTH-1:0] PC          ,
     output  wire                        Zero        ,
-    output  wire                        ALUOut      ,
-    output  wire                        WriteData   
+    output  wire    [DATA_WIDTH-1:0]    ALUOut      ,
+    output  wire    [DATA_WIDTH-1:0]    WriteData   
 */
     Datapath Datapath0
     (
@@ -91,6 +92,7 @@ module MIPS #
         .CLK            (CLK)       ,
         .rst            (rst)       ,
 
+        .PC             (PC)        ,
         .Zero           (Zero)      ,
         .ALUOut         (ALUOut)    ,
         .WriteData      (WriteData) 
