@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/EECE/DigitalElectronics/IEEE Workshop/MIPS modules
+vAdder
+!s110 1646490246
+!i10b 1
+!s100 BOXL@VXI=k7VbW;NBLX?K3
+I>f^z7D<?NK1jfJ`cHz_lk2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1646490037
+8.\Adder.v
+F.\Adder.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1646490246.000000
+!s107 .\Adder.v|
+!s90 .\Adder.v|
+!i113 1
+Z3 tCvgOpt 0
+n@adder
+vALU
+!s110 1646504278
+!i10b 1
+!s100 @f0hjT;P;bXO4n4gdBcnH0
+I<JCLRe`9@8PbPRn:K?0d^3
+R1
+R0
+w1646490406
+8.\ALU.v
+F.\ALU.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504278.000000
+!s107 .\ALU.v|
+!s90 .\ALU.v|
+!i113 1
+R3
+n@a@l@u
+vControlUnit
+!s110 1646504570
+!i10b 1
+!s100 ]M012n1eLc:ZFHnO?=1KC1
+IQW@1J[4Vj03U]5C?aGhIX0
+R1
+R0
+w1646504126
+8.\ControlUnit.v
+F.\ControlUnit.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504570.000000
+!s107 .\ControlUnit.v|
+!s90 .\ControlUnit.v|
+!i113 1
+R3
+n@control@unit
+vDataMemory
+!s110 1646496163
+!i10b 1
+!s100 o4leH>ZDF85WY<ZmPlMV;0
+Izbc>KHc9^>oWO=k8:;7<50
+R1
+R0
+w1646495277
+8.\DataMemory.v
+F.\DataMemory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646496163.000000
+!s107 .\DataMemory.v|
+!s90 .\DataMemory.v|
+!i113 1
+R3
+n@data@memory
+vDatapath
+!s110 1646504563
+!i10b 1
+!s100 L8MhY]TnTgO]2I=_?B]JL3
+I_T`gA<NNP`OSLWi9W]O2T3
+R1
+R0
+w1646504425
+8.\Datapath.v
+F.\Datapath.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504563.000000
+!s107 .\Datapath.v|
+!s90 .\Datapath.v|
+!i113 1
+R3
+n@datapath
+vInstructionMemory
+!s110 1646492352
+!i10b 1
+!s100 N7O5D?eUCBeC6dllATGJX3
+I7SIooFEfjeLo1ONf_1N4]0
+R1
+R0
+w1646492349
+8.\InstructionMemory.v
+F.\InstructionMemory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646492352.000000
+!s107 .\InstructionMemory.v|
+!s90 .\InstructionMemory.v|
+!i113 1
+R3
+n@instruction@memory
+vMIPS
+!s110 1646504576
+!i10b 1
+!s100 SKl=nNknd?^O9LES3fIlm1
+IbjGeYUl?L[BX0`TlZDD9K2
+R1
+R0
+w1646503884
+8.\MIPS.v
+F.\MIPS.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504576.000000
+!s107 .\MIPS.v|
+!s90 .\MIPS.v|
+!i113 1
+R3
+n@m@i@p@s
+vMUX_2x1
+!s110 1646504536
+!i10b 1
+!s100 22@68k<0^_[X^:b82H9Md1
+IF[J^OZ@>A>2KgC@B@6BVI2
+R1
+R0
+w1646495820
+8.\MUX_2x1.v
+F.\MUX_2x1.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504536.000000
+!s107 .\MUX_2x1.v|
+!s90 .\MUX_2x1.v|
+!i113 1
+R3
+n@m@u@x_2x1
+vProgramCounter
+!s110 1646504557
+!i10b 1
+!s100 5L4KTTazIg3zjdN]zNHD20
+IR=oOjEbB_NUW8iae_g?LV2
+R1
+R0
+w1646504521
+8.\ProgramCounter.v
+F.\ProgramCounter.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504557.000000
+!s107 .\ProgramCounter.v|
+!s90 .\ProgramCounter.v|
+!i113 1
+R3
+n@program@counter
+vRegisterFile
+!s110 1646504298
+!i10b 1
+!s100 ^F3C02C`VGl4Y8;l21Yb`3
+IkObTaJZ5`lK9?3k>A62hg2
+R1
+R0
+w1646493816
+8.\RegisterFile.v
+F.\RegisterFile.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504298.000000
+!s107 .\RegisterFile.v|
+!s90 .\RegisterFile.v|
+!i113 1
+R3
+n@register@file
+vShiftLeftTwice
+!s110 1646504550
+!i10b 1
+!s100 c]>_<4zYAd>>8zAT>:W_82
+IGmS>ANazZjCJ80bS=3Xij2
+R1
+R0
+w1646495501
+8.\ShiftLeftTwice.v
+F.\ShiftLeftTwice.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646504550.000000
+!s107 .\ShiftLeftTwice.v|
+!s90 .\ShiftLeftTwice.v|
+!i113 1
+R3
+n@shift@left@twice
+vSignExtend
+!s110 1646496158
+!i10b 1
+!s100 S01eHYFTd8[?0JcTTIL1?3
+IEXW2zPAEg_719:`h7ch=`0
+R1
+R0
+w1646489961
+8.\SignExtend.v
+F.\SignExtend.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1646496157.000000
+!s107 .\SignExtend.v|
+!s90 .\SignExtend.v|
+!i113 1
+R3
+n@sign@extend

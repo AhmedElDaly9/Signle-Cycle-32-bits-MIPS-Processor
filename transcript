@@ -1,0 +1,136 @@
+# vsim work.MIPS 
+# Start time: 20:27:47 on Mar 05,2022
+# Loading work.MIPS
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.RegisterFile
+# Loading work.MUX_2x1
+# Loading work.Adder
+# Loading work.ShiftLeftTwice
+# Loading work.SignExtend
+# Loading work.ALU
+# Loading work.ProgramCounter
+# Loading work.InstructionMemory
+# Loading work.DataMemory
+add wave -position insertpoint  \
+sim:/MIPS/testValue \
+sim:/MIPS/rst \
+sim:/MIPS/Zero \
+sim:/MIPS/WriteData \
+sim:/MIPS/RegWrite \
+sim:/MIPS/RegDst \
+sim:/MIPS/ReadData \
+sim:/MIPS/PCSrc \
+sim:/MIPS/PC \
+sim:/MIPS/MemtoReg \
+sim:/MIPS/MemWrite \
+sim:/MIPS/Jmp \
+sim:/MIPS/Instr \
+sim:/MIPS/DATA_WIDTH \
+sim:/MIPS/CLK \
+sim:/MIPS/ALUSrc \
+sim:/MIPS/ALUOut \
+sim:/MIPS/ALUControl \
+sim:/MIPS/ADDRESS_WIDTH
+force -freeze sim:/MIPS/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/MIPS/rst 0 0
+run
+force -freeze sim:/MIPS/rst 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 20:30:56 on Mar 05,2022, Elapsed time: 0:03:09
+# Errors: 0, Warnings: 0
