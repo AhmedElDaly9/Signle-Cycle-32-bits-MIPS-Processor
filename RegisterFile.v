@@ -5,15 +5,15 @@ module RegisterFile #
     parameter   REG_ADD_WIDTH   =   5
 )
 (
-    input   wire    [REG_ADD_WIDTH-1:0]     A1  ,
-    input   wire    [REG_ADD_WIDTH-1:0]     A2  ,
-    input   wire    [REG_ADD_WIDTH-1:0]     A3  ,
-    input   wire    [FILE_WIDTH-1:0]        WD3 ,
-    input   wire                            WEN3,
-    input   wire                            CLK ,
-    input   wire                            rst ,
+    input   wire    [REG_ADD_WIDTH-1:0]     A1      ,
+    input   wire    [REG_ADD_WIDTH-1:0]     A2      ,
+    input   wire    [REG_ADD_WIDTH-1:0]     A3      ,
+    input   wire    [FILE_WIDTH-1:0]        WD3     ,
+    input   wire                            WEN3    ,
+    input   wire                            CLK     ,
+    input   wire                            rst     ,
 
-    output  wire    [FILE_WIDTH-1:0]        RD1 ,
+    output  wire    [FILE_WIDTH-1:0]        RD1     ,
     output  wire    [FILE_WIDTH-1:0]        RD2
 );
 

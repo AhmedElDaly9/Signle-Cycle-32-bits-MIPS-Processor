@@ -1,4 +1,4 @@
-module SignExtend#
+module SignExtend #
 (
     parameter   IN_INSTR_WIDTH  =   16  ,
     parameter   OUT_INSTR_WIDTH =   32

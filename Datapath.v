@@ -6,7 +6,7 @@ module Datapath #
 ) 
 (
     input   wire    [INSTR_WIDTH-1:0]   Instruction ,
-    input   wire    [DATA_WIDTH-1:0]    Data        ,
+    input   wire    [DATA_WIDTH-1:0]    ReadData    ,
     input   wire    [2:0]               ALUControl  ,
     input   wire                        PCSrc       ,
     input   wire                        Jmp         ,
@@ -18,9 +18,9 @@ module Datapath #
     input   wire                        rst         ,
 
     output  wire    [ADDRESS_WIDTH-1:0] PC          ,
-    output  wire                        Zero        ,
     output  wire    [DATA_WIDTH-1:0]    ALUOut      ,
-    output  wire    [DATA_WIDTH-1:0]    WriteData   
+    output  wire    [DATA_WIDTH-1:0]    WriteData   ,
+    output  wire                        Zero        
 );
 
 /***************************INTERNAL SIGNALS***************************/
@@ -35,7 +35,6 @@ module Datapath #
 
     wire    [DATA_WIDTH-1:0]        SrcA                ;
     wire    [DATA_WIDTH-1:0]        SrcB                ;
-    wire    [DATA_WIDTH-1:0]        ReadData            ;
     wire    [DATA_WIDTH-1:0]        RegWD3Result        ;
     wire    [4:0]                   WriteReg            ;
 

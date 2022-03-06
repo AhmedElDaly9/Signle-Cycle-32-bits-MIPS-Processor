@@ -21,17 +21,17 @@ localparam SLT  = 3'b110    ;
     always @ (*)
         begin
             case (ALUControl)
-                AND :   ALUResult = SrcA & SrcB ;
-                OR  :   ALUResult = SrcA | SrcB ;
-                PLS :   ALUResult = SrcA + SrcB ;
-                MIN :   ALUResult = SrcA - SrcB ;
-                MUL :   ALUResult = SrcA * SrcB ;
-                SLT :   ALUResult = (SrcA < SrcB);
+                AND :   ALUResult = SrcA & SrcB     ;
+                OR  :   ALUResult = SrcA | SrcB     ;
+                PLS :   ALUResult = SrcA + SrcB     ;
+                MIN :   ALUResult = SrcA - SrcB     ;
+                MUL :   ALUResult = SrcA * SrcB     ;
+                SLT :   ALUResult = (SrcA < SrcB)   ;
 
-                default :   ALUResult = {(DATA_WIDTH){1'b0}};
+                default :   ALUResult = {(DATA_WIDTH){1'b0}}    ;
             endcase
         end
 
-    assign  Zero  = ~(|ALUResult);
+    assign  Zero  = ~(|ALUResult)   ;
 
 endmodule

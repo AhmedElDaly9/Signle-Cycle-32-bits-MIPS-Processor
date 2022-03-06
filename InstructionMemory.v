@@ -14,9 +14,9 @@ module InstructionMemory #
 
     initial
         begin
-            $readmemh("Program 2_Machine Code.txt",ROM) ;
+            $readmemh("Ref_MachineCode.txt",ROM) ;
         end
 
-    assign  OutReadData = ROM [InstrAddress >> 2];
+    assign  OutReadData = ROM [InstrAddress >> 2]   ;
         
 endmodule

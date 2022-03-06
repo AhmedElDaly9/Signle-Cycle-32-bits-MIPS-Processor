@@ -12,22 +12,22 @@ module MIPS #
 
 /***************************INTERNAL SIGNALS***************************/
 
-    wire    [ADDRESS_WIDTH-1:0]   Instr     ;
-    wire    [ADDRESS_WIDTH-1:0]   PC        ;
+    wire    [ADDRESS_WIDTH-1:0]     Instr       ;
+    wire    [ADDRESS_WIDTH-1:0]     PC          ;
 
-    wire    [DATA_WIDTH-1:0]      ALUOut    ;
-    wire    [DATA_WIDTH-1:0]      WriteData ;
-    wire    [DATA_WIDTH-1:0]      ReadData  ;
+    wire    [DATA_WIDTH-1:0]        ALUOut      ;
+    wire    [DATA_WIDTH-1:0]        WriteData   ;
+    wire    [DATA_WIDTH-1:0]        ReadData    ;
 
-    wire    [2:0]               ALUControl  ;
-    wire                        Jmp         ;
-    wire                        Zero        ;
-    wire                        PCSrc       ;
-    wire                        MemtoReg    ;
-    wire                        ALUSrc      ;
-    wire                        RegDst      ;
-    wire                        RegWrite    ;
-    wire                        MemWrite    ;
+    wire    [2:0]                   ALUControl  ;
+    wire                            Jmp         ;
+    wire                            Zero        ;
+    wire                            PCSrc       ;
+    wire                            MemtoReg    ;
+    wire                            ALUSrc      ;
+    wire                            RegDst      ;
+    wire                            RegWrite    ;
+    wire                            MemWrite    ;
 
 /***************************CONTROL UNIT***************************/
 /*
@@ -61,8 +61,8 @@ module MIPS #
 
 /***************************DATA PATH***************************/
 /*
-        input   wire    [INSTR_WIDTH-1:0]   Instruction ,
-    input   wire    [DATA_WIDTH-1:0]    Data        ,
+    input   wire    [INSTR_WIDTH-1:0]   Instruction ,
+    input   wire    [DATA_WIDTH-1:0]    ReadData    ,
     input   wire    [2:0]               ALUControl  ,
     input   wire                        PCSrc       ,
     input   wire                        Jmp         ,
@@ -81,7 +81,7 @@ module MIPS #
     Datapath Datapath0
     (
         .Instruction    (Instr)     ,
-        .Data           (ReadData)  ,
+        .ReadData       (ReadData)  ,
         .ALUControl     (ALUControl),
         .PCSrc          (PCSrc)     ,
         .Jmp            (Jmp)       ,

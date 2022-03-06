@@ -1,5 +1,5 @@
 # vsim work.MIPS 
-# Start time: 01:16:16 on Mar 06,2022
+# Start time: 22:14:01 on Mar 06,2022
 # Loading work.MIPS
 # Loading work.ControlUnit
 # Loading work.Datapath
@@ -13,14 +13,20 @@
 # Loading work.InstructionMemory
 # Loading work.DataMemory
 add wave -position insertpoint  \
-sim:/MIPS/testValue \
 sim:/MIPS/rst \
 sim:/MIPS/CLK
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Daly  Hostname: DESKTOP-HHUSP20  ProcessID: 21776
-#           Attempting to use alternate WLF file "./wlft9faex6".
+#           Attempting to use alternate WLF file "./wlftz4v378".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9faex6
-force -freeze sim:/MIPS/rst 0 0
+#           Using alternate file: ./wlftz4v378
+add wave -position insertpoint  \
+sim:/MIPS/Datapath0/REG/REG
+add wave -position insertpoint  \
+sim:/MIPS/DataMem0/RAM
+force -freeze sim:/MIPS/rst 1 0
+force -freeze sim:/MIPS/rst 0 20
 force -freeze sim:/MIPS/CLK 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/MIPS/rst 1 70
 run
