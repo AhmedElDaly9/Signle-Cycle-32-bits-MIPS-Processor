@@ -30,3 +30,31 @@ force -freeze sim:/MIPS/CLK 1 0, 0 {50 ps} -r 100
 run
 force -freeze sim:/MIPS/rst 1 70
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 22:32:15 on Mar 06,2022, Elapsed time: 0:18:14
+# Errors: 0, Warnings: 2
