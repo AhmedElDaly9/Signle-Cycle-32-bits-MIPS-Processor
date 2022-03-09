@@ -1,3 +1,11 @@
+/************************************************************/
+/* Module Name: ProgramCounter                              */
+/* Module Function:                                         */
+/*  The program counter module is responsible of updating   */
+/*  the program counter value on the positive edge CLK      */
+/*  and reseting the program conunter on the negative edge  */
+/*  reset.                                                  */
+/************************************************************/
 module ProgramCounter#
 (
     parameter INSTR_WIDTH   =   32

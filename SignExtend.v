@@ -1,3 +1,10 @@
+/********************************************************/
+/* Module Name: SignExtend                              */
+/* Module Function:                                     */
+/*  This is a simple parmaterized sign extend module    */
+/*  responsible of replicating the most significant bit */
+/*  to manipulate the needed offset immediate values.   */
+/********************************************************/
 module SignExtend #
 (
     parameter   IN_INSTR_WIDTH  =   16  ,

@@ -1,3 +1,10 @@
+/********************************************************************/
+/* Module Name: InstructionMemory                                   */
+/* Module Function:                                                 */
+/*  Instruction memory is the ROM which contains the instructions   */
+/*  to be fetched next using the program counter signal coming from */
+/*  the Data path.                                                  */
+/********************************************************************/
 module InstructionMemory #
 (
     parameter   INSTR_WIDTH     =   32  ,
@@ -14,7 +21,7 @@ module InstructionMemory #
 
     initial
         begin
-            $readmemh("Test cases/Program 1_Machine Code.txt",ROM) ;
+            $readmemh("Test cases/Program 4_Machine Code.txt",ROM) ;
         end
 
     assign  OutReadData = ROM [InstrAddress >> 2]   ;

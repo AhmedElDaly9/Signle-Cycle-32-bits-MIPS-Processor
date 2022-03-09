@@ -1,3 +1,13 @@
+/************************************************************/
+/* Module Name: ControlUnit                                 */
+/* Module Function:                                         */
+/*  Control unit is responsible of producing the required   */
+/*  signals for the Datapath and Data memory based on the   */
+/*  instruction coming from the instruction memory whose    */    
+/*  most significant 5-bits go to the control unit main     */
+/*  decoder and least significant 5-bits go to the ALU      */
+/*  decoder.                                                */
+/************************************************************/
 module ControlUnit #
 (
     parameter   INSTR_WIDTH =   32

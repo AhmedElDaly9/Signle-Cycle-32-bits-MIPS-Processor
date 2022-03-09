@@ -1,3 +1,13 @@
+/****************************************************************/
+/* Module Name: DataPath                                        */
+/* Module Function:                                             */
+/*  The Data path is responsible of the data flow based on the  */
+/*  control signals coming from the control unit and the        */
+/*  instruction coming from the instruction memory, to finally  */
+/*  produce the appropriate program counter to the instruction  */
+/*  memory to fetch the next instruction, and produce the       */
+/*  writing signal and data to be stored in the Data memory.    */
+/****************************************************************/
 module Datapath #
 (
     parameter   INSTR_WIDTH     =   32  ,

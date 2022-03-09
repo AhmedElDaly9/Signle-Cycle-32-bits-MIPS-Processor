@@ -1,3 +1,11 @@
+/********************************************************************/
+/* Module Name: MIPS                                                */
+/* Module Function:                                                 */
+/*  This it the Top module of the MIPS Processor, it contains the   */
+/*  control unit, Data path, Data memory and Instruction memory     */
+/*  modules which exchange control signals and data to perform the  */
+/*  program instructions stored in the Instruction memory.          */
+/********************************************************************/
 module MIPS #
 (
     parameter   ADDRESS_WIDTH   =   32  ,

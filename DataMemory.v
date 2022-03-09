@@ -1,3 +1,10 @@
+/****************************************************************/
+/* Module Name: DataMemory                                      */
+/* Module Function:                                             */
+/*  Data memory is the RAM which the CPU uses to store          */
+/*  and read the needed data, it has one 32-bit asynchronous    */ 
+/*  read port and another 32-bit synchronous write port.        */
+/****************************************************************/
 module DataMemory #
 (
     parameter   MEM_WIDTH       =   32  ,

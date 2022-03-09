@@ -1,3 +1,9 @@
+/********************************************************/
+/* Module Name: Adder                                   */
+/* Module Function:                                     */
+/*  This is a simple adder module to be used in Program */
+/*  Counter incrementing and branching.                 */
+/********************************************************/
 module Adder #
 (
     parameter   DATA_WIDTH  =   32

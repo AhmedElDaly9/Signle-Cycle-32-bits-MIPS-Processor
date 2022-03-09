@@ -1,3 +1,10 @@
+/****************************************************************/
+/* Module Name: RegisterFile                                    */
+/* Module Function:                                             */
+/*  The CPU uses register file to store and read the commonly   */
+/*  used data, it has one 32-bit asynchronous read port and     */ 
+/*  another 32-bit synchronous write port.                      */
+/****************************************************************/
 module RegisterFile #
 (
     parameter   FILE_WIDTH      =   32  ,

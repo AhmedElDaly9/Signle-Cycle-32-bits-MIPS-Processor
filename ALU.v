@@ -1,3 +1,10 @@
+/************************************************************/
+/* Module Name: ALU                                         */
+/* Module Function:                                         */
+/*  ALU is responsible of performing the AND, OR, Add,      */
+/*  Subtract, Multiply and Set less than, through the 3-bit */
+/*  ALU control signal coming from the control unit.        */
+/************************************************************/
 module ALU#
 (
     parameter   DATA_WIDTH      =   32
